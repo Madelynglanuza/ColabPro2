@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento del Progreso del Proyecto</title>
+    <link rel="stylesheet" href="styles8.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="btn" href="calendar.html">Regresar</a>
+            <h1>Seguimiento del Progreso del Proyecto</h1>
+            <button class="add-task">Agregar Tarea</button>
+        </header>
+        
+        <section class="progress-summary">
+            <h2>Resumen del Progreso</h2>
+            <div class="progress-percentage">60%</div>
+        </section>
+
+        <section class="task-list">
+            <h2>Lista de Tareas</h2>
+            <input type="text" class="search-bar" placeholder="Buscar tarea...">
+            <ul class="tasks"></ul>
+        </section>
+
+        <section class="timeline">
+            <h2>Cronograma del Proyecto</h2>
+            <ul class="timeline-events"></ul>
+        </section>
+
+        <section class="activity-log">
+            <h2>Registro de Actividades</h2>
+            <ul class="log"></ul>
+        </section>
+    </div>
+    
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projects.html">Lista de Proyectos</a></li>
+                <li><a href="create-project.html">Crear Nuevo Proyecto</a></li>
+                <li><a href="team-members.html">Miembros del Equipo</a></li>
+                <li><a href="chat.html">chat</a></li>
+                <li><a href="calendar.html">Calendario</a></li>
+                <li><a href="server.js"></a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <section id="progressTrackingSection">
+                <h2>Seguimiento del Progreso del Proyecto</h2>
+            
+                <!-- Barra de Progreso -->
+                <div class="progress-summary">
+                    <h3>Resumen del Progreso</h3>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%;"></div>
+                    </div>
+                    <div class="progress-percentage">60%</div>
+                </div>
+            
+                <!-- Gráfico de Barras -->
+                <h3>Gráfico de Progreso</h3>
+                <canvas id="progressChart" width="400" height="200"></canvas>
+            
+                <!-- Hitos Alcanzados -->
+                <h3>Hitos Alcanzados</h3>
+                <ul class="milestones">
+                    <li>Entrega de la versión 1.0</li>
+                    <li>Aprobación del diseño por el cliente</li>
+                    <li>Lanzamiento de la beta pública</li>
+                </ul>
+            
+                <!-- Calendario de Entregas -->
+                <h3>Calendario de Entregas</h3>
+                <table class="delivery-calendar">
+                    <thead>
+                        <tr>
+                            <th>Entrega</th>
+                            <th>Fecha Planificada</th>
+                            <th>Fecha Real</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Entrega 1</td>
+                            <td>2024-08-15</td>
+                            <td>2024-08-14</td>
+                        </tr>
+                        <tr>
+                            <td>Entrega 2</td>
+                            <td>2024-09-01</td>
+                            <td>2024-08-30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+                <!-- Indicadores Clave de Rendimiento (KPIs) -->
+                <h3>Indicadores Clave de Rendimiento (KPIs)</h3>
+                <div class="kpis">
+                    <div class="kpi">
+                        <h4>Errores Reportados</h4>
+                        <p>12</p>
+                    </div>
+                    <div class="kpi">
+                        <h4>Satisfacción del Cliente</h4>
+                        <p>4.8/5</p>
+                    </div>
+                    <div class="kpi">
+                        <h4>Productividad del Equipo</h4>
+                        <p>85%</p>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

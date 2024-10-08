@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylees.css">
+    <title>Lista de Proyectos Colaborativos</title>
+</head>
+<body>
+    <div class="container">
+        <header style="display: flex; justify-content: space-between; align-items: center;">
+            <a class="btn" href="index.html">Regresar</a>
+        <h1 style="flex-grow: 1; text-align: center;">Lista de Proyectos</h1>
+        <a class="btn" href="project-detalles.html">Continuar</a>
+    </header>
+        <input type="text" id="search" placeholder="Buscar proyectos..." onkeyup="filterProjects()">
+        <table id="projectsTable">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Responsables</th>
+                    <th>Fechas</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <body>
+                <tr>
+                    <td>Proyecto A</td>
+                    <td>Desarrollo de una aplicación web.</td>
+                    <td><span class="status ongoing">En curso</span></td>
+                    <td>Juan, Ana</td>
+                    <td>Inicio: 01/01/2024<br>Fin: 30/06/2024</td>
+                    <td>
+                        <button onclick="editProject(this)">Editar</button><br>
+                        <button onclick="deleteProject(this)">Eliminar</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Proyecto B</td>
+                    <td>Investigación de mercado.</td>
+                    <td><span class="status completed">Completado</span></td>
+                    <td>Pedro, María</td>
+                    <td>Inicio: 01/02/2024<br>Fin: 15/05/2024</td>
+                    <td>
+                        <button onclick="editProject(this)">Editar</button> 
+                        <button onclick="deleteProject(this)">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Más proyectos pueden ser añadidos aquí -->
+            </body>
+        </table>
+    </div>
+    <div id="editProjectForm" style="display: none;">
+        <h2>Editar Proyecto</h2>
+        <input type="text" id="editProjectTitle" placeholder="Título del proyecto">
+        <textarea id="editProjectDescription" placeholder="Descripción del proyecto"></textarea>
+        <input type="text" id="editProjectOwnerId" placeholder="ID del propietario">
+        <button id="updateProjectBtn" onclick="updateProject()">Actualizar Proyecto</button>
+        <button onclick="toggleEditProjectForm()">Cancelar</button>
+    </div>
+    
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="project-detalles.html">Detalles del Proyecto</a></li>
+                <li><a href="create-project.html">Crear Nuevo Proyecto</a></li>
+                <li><a href="team-members.html">Miembros del Equipo</a></li>
+                <li><a href="chat.html">chat</a></li>
+                <li><a href="calendar.html">Calendario</a></li>
+                <li><a href="progress-tracking.html">Seguimiento del progreso</a></li>
+                <li><a href="server.js"></a></li>
+                <li><a href="#user.html">user</a></li>
+                <li><a href="#Task.js">Tareas</a></li>
+
+            </ul>
+
+    <div id="chatBox"></div>
+    <script src="script.js"></script>
+</body>
+</html>

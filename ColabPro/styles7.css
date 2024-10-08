@@ -1,0 +1,72 @@
+/* Estilos básicos para el diseño y la apariencia */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.calendar, .task-list {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calendar {
+    margin-right: 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacia los elementos */
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn{
+    background-color: gold;
+    border: none;
+    color: rgb(98, 98, 98);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prev-month,
+.next-month {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.current-month {
+    flex-grow: 1; /* Permite que el título ocupe el espacio disponible */
+    text-align: center; /* Centra el texto */
+    margin: 0; /* Elimina el margen por defecto */
+}

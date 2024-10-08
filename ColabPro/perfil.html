@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - ColabPro</title>
+    <link rel="stylesheet" href="styles10.css">
+</head>
+<body>
+    <header>
+        <h1 class="app-name">ColabPro</h1>
+        <nav>
+            <ul>
+                <li><a href="projects.html">Lista de Proyectos</a></li>
+                <li><a href="project-detalles.html">Detalles del Proyecto</a></li>
+                <li><a href="create-project.html">Crear Nuevo Proyecto</a></li>
+                <li><a href="team-members.html">Miembros del Equipo</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="calendar.html">Calendario</a></li>
+                <li><a href="progress-tracking.html">Seguimiento del Progreso</a></li>
+                <li><a href="logout.html">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="userPerfil">
+            <h2>Perfil de Usuario</h2>
+            <div class="perfil-info">
+                <p><strong>Nombre:</strong> <span id="userName"></span></p>
+                <p><strong>Correo Electrónico:</strong> <span id="userEmail"></span></p>
+                <p><strong>Rol:</strong> <span id="userRole">Desarrollador</span></p>
+            </div>
+            <div id="editPerfilForm" style="display: none;">
+                <h3>Editar Perfil</h3>
+                <form id="profileForm">
+                    <label for="editUserName">Nombre:</label>
+                    <input type="text" id="editUserName" required>
+                    <label for="editUserEmail">Correo Electrónico:</label>
+                    <input type="email" id="editUserEmail" required>
+                    <label for="editUserRole">Rol:</label>
+                    <select id="editUserRole">
+                        <option value="developer">Desarrollador/a</option>
+                        <option value="designer">Diseñador/a</option>
+                        <option value="project_manager">Gerente de Proyecto/a</option>
+                    </select>
+                    <button type="submit">Guardar Cambios</button>
+                </form>
+            </div>
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="projects.html">Lista de Proyectos</a></li>
+                        <li><a href="create-project.html">Crear Nuevo Proyecto</a></li>
+                        <li><a href="team-members.html">Miembros del Equipo</a></li>
+                        <li><a href="calendar.html">Calendario</a></li>
+                        <li><a href="progress-tracking.html">Seguimiento del progreso</a></li>
+                        <li><a href="server.js"></a></li>
+        
+                    </ul>
+                </nav>
+            </header>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ColabPro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

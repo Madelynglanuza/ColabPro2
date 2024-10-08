@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #0cbfe3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #ac9e05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00b306;
+}
+
+section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgb(134, 60, 60);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.996);
+}
+button {
+    padding: 10px 15px;
+    background-color: #ac9e05;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Estilos para la sección de seguimiento del progreso */
+#progressTrackingSection {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.progress-summary {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 20px;
+    background-color: #4CAF50; /* Color verde para la barra de progreso */
+}
+
+.progress-percentage {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.milestones, .kpis {
+    list-style-type: none;
+    padding: 0;
+}
+
+.milestones li, .kpi {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.delivery-calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.delivery-calendar th, .delivery-calendar td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.delivery-calendar th {
+    background-color: #f2f2f2;
+}
+
+.kpi h4 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.kpi p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}

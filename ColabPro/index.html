@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColabPro - Gestión de Proyectos Colaborativos</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1 class="app-name">ColabPro</h1>
+        <nav>
+            <ul>
+                <li><a href="projects.html">Lista de Proyectos</a></li>
+                <li><a href="project-detalles.html">Detalles del Proyecto</a></li>
+                <li><a href="create-project.html">Crear Nuevo Proyecto</a></li>
+                <li><a href="team-members.html">Miembros del Equipo</a></li>
+                <li><a href="chat.html">chat</a></li>
+                <li><a href="calendar.html">Calendario</a></li>
+                <li><a href="progress-tracking.html">Seguimiento del progreso</a></li>
+                <br><br/>
+                <li><a href="perfil.html">Perfil</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <div id="loginMessage" style="color: red; display: none;"></div>
+        </section>
+    </main>
+    <body>
+        <div class="resolucion">
+            <div class="desktop">
+                <h1></h1>
+            </div>
+            <div class="Tablet">
+                <h1></h1>
+            </div>
+            <div class="movil">
+                <h1></h1>
+            </div>
+        </div>
+    </body>
+        <p> © 2024 ColabPro. Todos los derechos reservados.</p>
+
+
+    <script src="script.js"></script>
+    <script src="server.js"></script>
+    <script src="db.js"></script>
+    <script src="projectRoutes.js"></script>
+    <script src="taskRoutes.js"></script>
+    <script src="userRoutes.js"></script>
+    <script src="chatRoutes.js"></script>
+    <script src="notificationRoutes.js"></script>
+    <script src="fileRoutes.js"></script>
+    <script src="feedbackRoutes.js"></script>
+    <script src="teamMemberRoutes.js"></script>
+    <script src="calendarEventRoutes.js"></script>
+    <script src="User.js"></script>
+    <script src="Project.js"></script>
+    <script src="Task.js"></script>
+    <script src="Comment.js"></script>
+    <script src="ChatMessage.js"></script>
+    <script src="Notification.js"></script>
+    <script src="File.js"></script>
+    <script src="Feedback.js"></script>
+    <script src="TeamMember.js"></script>
+    <script src="CalendarEvent.js"></script>
+
+    
+</body>
+</html>

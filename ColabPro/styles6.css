@@ -1,0 +1,129 @@
+body {
+    font-family: "Comic Sans MS";
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    width: 400%;
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #b0d800;
+    border-radius: 5px;
+    background: rgb(215, 212, 212);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: #03560b;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn {
+    margin-left: auto;
+    background-color: #0cbdbd; /* Color de fondo */
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+
+    background-color: rgb(228, 151, 9);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #006eff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+.back-Button{
+    background-color: #0cbdbd; /* Color de fondo */
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+.back-button, .continue-button, .fullscreen-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #070907;
+}
+.chat-box div {
+    margin: 5px 0;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgb(44, 114, 82);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+#send-button, #emoji-button, #file-button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#send-button {
+    background-color: #092810;
+    color: rgb(255, 255, 255);
+}
+
+#send-button:hover {
+    background-color: #218838;
+}
+
+#typing-indicator {
+    font-style: italic;
+    color: #888;
+}
+
+#typing-indicator {
+    font-style: italic;
+    color: #888;
+}
+.fullscreen-button {
+    background-color: #437777; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 2px 8px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    margin-left: 10px; /* Espacio entre el botón y el título */
+}
+
+.fullscreen-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
